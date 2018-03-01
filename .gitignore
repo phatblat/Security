@@ -1,7 +1,9 @@
+*.iml
 *.xccheckout
 *.xcscmblueprint
 .DS_Store
 .gradle/
+.idea/
 .rubygems/
 Carthage/
 Pods/
