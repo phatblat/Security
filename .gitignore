@@ -1,0 +1,11 @@
+*.xccheckout
+*.xcscmblueprint
+.DS_Store
+.gradle/
+.rubygems/
+Carthage/
+Pods/
+bin/
+build/
+gradlew.bat
+xcuserdata
