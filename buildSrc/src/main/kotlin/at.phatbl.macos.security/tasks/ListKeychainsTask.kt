@@ -1,10 +1,16 @@
 package at.phatbl.macos.security.tasks
+
+import org.gradle.api.tasks.Input
+
 /**
- * Lists user keychains on the system.
+ * Lists keychains on the search list.
  */
 open class ListKeychainsTask: SecurityExec() {
+    @Input
+    var domain = "user"
+
     init {
-        description = "Lists user keychains."
-        command = "security list-keychains -d user"
+        description = "Displays the keychain search list."
+        command = "security list-keychains -d $domain"
     }
 }
