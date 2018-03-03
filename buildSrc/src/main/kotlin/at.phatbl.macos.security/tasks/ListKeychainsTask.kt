@@ -1,12 +1,10 @@
 package at.phatbl.macos.security.tasks
-
-import at.phatbl.shellexec.ShellExec
-
 /**
  * Lists user keychains on the system.
  */
-open class ListKeychainsTask: ShellExec() {
+open class ListKeychainsTask: SecurityExec() {
     init {
+        description = "Lists user keychains."
         command = "security list-keychains -d user"
     }
 }

@@ -1,12 +1,11 @@
 package at.phatbl.macos.security.tasks
 
-import at.phatbl.shellexec.ShellExec
-
 /**
  * Lists code signing identities on the system.
  */
-open class FindIdentityTask: ShellExec() {
+open class FindIdentityTask: SecurityExec() {
     init {
+        description = "Lists code signing identities."
         command = "security find-identity -p codesigning"
     }
 }

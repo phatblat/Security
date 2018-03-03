@@ -48,10 +48,8 @@ tasks {
     }
 
     "listKeychains"(ListKeychainsTask::class) {
-        group = "🔐  Security"
     }
 
     "findIdentity"(FindIdentityTask::class) {
-        group = "🔐  Security"
     }
 }
